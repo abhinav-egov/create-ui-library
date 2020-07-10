@@ -1,6 +1,6 @@
 {
   "name": "@egovernments/create-ui-library",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "CLI for easily bootstrapping UI libraries",
   "main": "index.js",
   "engines": {
