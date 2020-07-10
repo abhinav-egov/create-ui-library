@@ -1,6 +1,6 @@
 {
   "name": "@egovernments/create-ui-library",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "CLI for easily bootstrapping UI libraries",
   "main": "index.js",
   "engines": {
@@ -10,7 +10,7 @@
     "create-ui-library": "index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava -v && standard *.js lib/*.js"
   },
   "repository": {
     "type": "git",
@@ -38,5 +38,18 @@
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
     "which": "^2.0.2"
+  },
+  "devDependencies": {
+    "ava": "^3.5.2",
+    "rmfr": "^2.0.0",
+    "standard": "^14.3.3"
+  },
+  "ava": {
+    "failFast": true,
+    "timeout": "10m",
+    "files": [
+      "index.test.js",
+      "lib/**/*.test.js"
+    ]
   }
 }
